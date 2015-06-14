@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+    <head></head>
+    <body>
+        <script>
+            (function() {
+                'use strict';
+                
+                window.opener
+                    .CloudCmd
+                    .GitHub
+                    .authorize(window.location.search);
+            })();
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,136 @@
+// An opinionated styleguide for writing sane, maintainable and scalable Sass.
+// http://sass-guidelin.es
+
+@import "themes/modern/variables";
+
+@import "vendors/bootstrap";
+@import "vendors/bootstrap-social";
+@import "vendors/font-awesome";
+@import "vendors/ionicons";
+
+@import "themes/modern/styles";
+
+// Scaffolding
+// -------------------------
+$sidebar-width: 200px;
+$sidebar-section-height: 50px;
+.chatroom-container {
+  height: 100%;
+}
+
+.messages-container {
+  overflow-y: scroll;
+  height: 580px;
+}
+
+#new-message__submit {
+  width: 70px;
+}
+
+#message__input {
+  width: 80%;
+}
+
+.sidebar {
+  position: fixed;
+  top: $navbar-height;
+  left: 0;
+  height: calc(100% - #{$navbar-height});
+  width: $sidebar-width;
+  box-shadow: 0 1px 5px rgba(0,0,0,.15);
+
+  &__section {
+
+    a {
+      transition: color 0.5s ease;
+      color: black;
+    }
+    padding-left: 30px;
+    height: $sidebar-section-height;
+    box-shadow: 1px 0 5px rgba(0,0,0,.15);
+    line-height: $sidebar-section-height;
+    transition: background-color 0.5s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $brand-primary;
+
+      a {
+        color: white;
+      }
+    }
+  }
+}
+
+.main-content {
+  margin-left: $sidebar-width;
+}
+
+html {
+  overflow: hidden;
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  overflow: hidden;
+  padding-top: 60px;
+  margin-bottom: 75px;
+  -webkit-font-smoothing: antialiased;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  line-height: 45px;
+}
+
+// Navbar
+// -------------------------
+
+.navbar-nav img {
+  width: 30px;
+  height: 30px;
+  margin: -15px 15px -15px;
+}
+
+// Alerts
+// -------------------------
+
+.alert {
+  margin-top: 20px;
+}
+
+// Thumbnails
+// -------------------------
+
+.thumbnail {
+  padding: 0;
+  border-radius: 0;
+  box-shadow: 0 0 5px #ccc, inset 0 0 0 #000;
+}
+
+// Font Icons
+// -------------------------
+
+.fa,
+[class^="ion-"] {
+  margin-right: 5px;
+}
+
+.chatroom-chat-title {
+  font-size: 24px;
+}
+
+.chatroom-chat-topic {
+  font-size: 20px;
+}
+
+p.good {
+  background-color: lightgreen;
+}
+
+p.bad {
+  background-color: pink;
+}

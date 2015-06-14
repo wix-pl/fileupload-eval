@@ -1,0 +1,56 @@
+/* app css stylesheet */
+
+.cursor {
+    cursor: pointer;
+}
+.search {
+    width: 600px;
+    margin: 0 auto;
+}
+
+aside.shows{
+    position: fixed;
+    top:0;
+    right: 70px;
+    width: 250px;
+    height: 60px;
+    line-height: 56px;
+    text-align: center;
+    cursor: pointer;
+
+    border: 1px solid #efefef;
+    -moz-border-radius: 0 0 120px 120px / 0 0 6px 6px;
+    border-radius: 0 0 120px 120px / 0 0 6px 6px;
+    -webkit-box-shadow: 0 1px 4px rgba(60, 118, 61, 0.1), 0 0 40px rgba(60, 118, 61, 0.1) inset;
+    -moz-box-shadow:  0 1px 4px rgba(60, 118, 61, 0.1), 0 0 40px rgba(60, 118, 61, 0.1) inset;
+    box-shadow:  0 1px 4px rgba(60, 118, 61, 0.1), 0 0 40px rgba(60, 118, 61, 0.1) inset;
+}
+
+.thumbnail {
+    margin: 20px 0 0;
+}
+
+.episodes {
+    margin: 0 20px;
+}
+
+.episodes .new {
+    background-color: #faf8f0;
+    border-color: #faebcc;
+}
+
+.episodes .border {
+    height: 1px;
+    margin: 9px 0;
+    overflow: hidden;
+    border-right: 1px solid #e5e5e5;
+}
+
+.episodes .magnet {
+    display: inline;
+}
+
+.shows .no-right {
+    padding-right: 0;
+    margin-right: 0;
+}

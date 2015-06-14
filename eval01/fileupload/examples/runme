@@ -1,0 +1,6 @@
+[ ! -d ./node_modules ] && npm install
+ [ -f ./"app.js" ] && APP="app.js"
+ [ -f ./"server.js" ] && APP="server.js"
+
+$(which nodemon) "$APP" || $(which node) "$APP"
+

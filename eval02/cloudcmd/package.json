@@ -1,0 +1,73 @@
+{
+  "name": "cloudcmd",
+  "version": "2.1.0",
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (https://github.com/coderaiser)",
+  "description": "Cloud Commander orthodox web file manager with console and editor",
+  "homepage": "http://cloudcmd.io",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/coderaiser/cloudcmd.git"
+  },
+  "keywords": [
+    "file manager",
+    "orthodox",
+    "file",
+    "folder",
+    "console",
+    "editor"
+  ],
+  "bin": {
+    "cloudcmd": "bin/cloudcmd.js",
+    "iocmd": "bin/iocmd.js"
+  },
+  "scripts": {
+    "test": "gulp default",
+    "start": "node bin/cloudcmd.js"
+  },
+  "subdomain": "cloudcmd",
+  "dependencies": {
+    "ashify": "~1.0.0",
+    "checkup": "~1.0.2",
+    "console-io": "~2.1.0",
+    "edward": "~1.1.0",
+    "execon": "~1.1.0",
+    "express": "~4.11.0",
+    "faust": "~1.0.0",
+    "files-io": "~1.2.0",
+    "flop": "~1.0.25",
+    "http-auth": "~2.2.3",
+    "jag": "~1.0.0",
+    "join-io": "~1.3.0",
+    "marked": "~0.3.2",
+    "mellow": "~1.0.0",
+    "minify": "~1.4.0",
+    "minimist": "~1.1.0",
+    "mollify": "~1.0.0",
+    "patchfile": "~1.0.0",
+    "pipe-io": "~1.1.1",
+    "ponse": "~1.3.0",
+    "rendy": "~1.0.2",
+    "restafary": "~1.1.0",
+    "socket.io": "~1.3.2",
+    "tryrequire": "~1.1.5"
+  },
+  "devDependencies": {
+    "changelog-io": "~1.3.4",
+    "gulp": "~3.8.0",
+    "gulp-jshint": "~1.9.0",
+    "gulp-mocha": "~2.0.0",
+    "gulp-recess": "~1.1.1",
+    "minor": "~1.2.2",
+    "morgan": "~1.5.0",
+    "place": "~1.0.0",
+    "prepend": "~1.0.2",
+    "shortdate": "~1.0.1",
+    "should": "~4.6.0",
+    "version-io": "~1.0.3"
+  },
+  "engines": {
+    "node": ">=0.6"
+  },
+  "license": "MIT",
+  "main": "lib/cloudcmd.js"
+}

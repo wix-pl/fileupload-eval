@@ -1,0 +1,19 @@
+Description:
+    Creates a default AngularJS app
+
+Example:
+    yo wix-angular [--coffee] [--minsafe]
+
+    This will create:
+        Gruntfile.js
+        bower.json
+
+        app/index.vm
+        app/scripts/your-app-name-here.js
+        app/scripts/controllers/main.js
+        app/bower_components/angular/angular.js
+        app/styles/main.scss
+        app/views/main.html
+
+        test/lib/angular-mocks.js
+        test/spec/controllers/main.js

@@ -1,0 +1,34 @@
+<!doctype html>
+<html ng-app="<%= _.camelize(name) %>">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><%= _.camelize(name) %></title>
+    <meta name="viewport" content="width=device-width">
+
+    <!-- build:css({.tmp,app}) styles/<%= name %>.css -->
+    <link rel="stylesheet" href="styles/<%= name %>.css">
+    <!-- endbuild -->
+  </head>
+  <body>
+    <!-- Add your site or application content here -->
+    <wix-dashboard-widget src="'<%= name.replace(/-widget$/, '') %>'" options="{}" dev="true"></wix-dashboard-widget>
+
+    <script src="bower_components/jquery/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.js"></script>
+    <script src="bower_components/angular-i18n/angular-locale_${locale}.js"></script>
+    <script src="scripts/locale/messages_${locale}.js"></script>
+    <script src="bower_components/uri.js/src/URI.js"></script>
+    <script src="bower_components/wix-angular/dist/wix-angular.js"></script>
+
+    <!-- build:js({.tmp,app}) scripts/<%= name %>.js -->
+    <script src="scripts/<%= name %>.js"></script>
+    <script src="scripts/controllers/<%= name %>.js"></script>
+    <!-- endbuild -->
+
+    <!-- wix-dashboard-menu -->
+    <script src="${clientTopology.publicUrl}my-account/framework.js?debug=${debug}"></script>
+    <!-- end-wix-dashboard-menu -->
+  </body>
+</html>
